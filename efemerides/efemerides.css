@@ -1,0 +1,161 @@
+/* =========================================================
+   EFEMÉRIDES — "¿Sabías que...?"
+   Hoja de estilos autocontenida y reutilizable.
+
+   Cada color usa var(--variable-del-sitio, valor-por-defecto):
+   si tu web ya define esa variable CSS (--amber, --teal, etc.)
+   la hereda automáticamente; si no, usa el valor por defecto.
+   Así este archivo funciona tal cual en cualquier web, aunque
+   no comparta el mismo sistema de diseño.
+   ========================================================= */
+
+.efemeride-card {
+  position: relative;
+  background: var(--bg-panel, #171d26);
+  border: 1px solid var(--line, #2a3441);
+  border-left: 3px solid var(--amber, #ffb020);
+  border-radius: 6px;
+  padding: 28px 32px;
+}
+
+.efemeride-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.efemeride-fecha {
+  font-family: var(--mono, ui-monospace, monospace);
+  font-size: 12.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-dim, #5c6a7d);
+}
+
+.efemeride-categoria {
+  font-family: var(--mono, ui-monospace, monospace);
+  font-size: 12px;
+  color: var(--teal, #4fd1c5);
+  border: 1px solid rgba(79, 209, 197, 0.35);
+  background: rgba(79, 209, 197, 0.07);
+  padding: 3px 9px;
+  border-radius: 3px;
+}
+
+.efemeride-titulo {
+  margin: 0 0 10px;
+  font-size: 1.15rem;
+  color: var(--text-primary, #e4e9f0);
+}
+
+.efemeride-texto {
+  color: var(--text-muted, #8593a6);
+  margin: 0 0 16px;
+  font-size: 0.98rem;
+}
+
+.efemeride-fuentes {
+  font-family: var(--mono, ui-monospace, monospace);
+  font-size: 12px;
+  color: var(--text-dim, #5c6a7d);
+  margin: 0 0 16px;
+}
+
+.efemeride-fuentes:empty {
+  display: none;
+}
+
+.efemeride-fuentes a {
+  color: var(--text-dim, #5c6a7d);
+  text-decoration: underline;
+}
+
+.efemeride-fuentes a:hover {
+  color: var(--amber, #ffb020);
+}
+
+.efemeride-enlace {
+  display: inline-block;
+  font-family: var(--mono, ui-monospace, monospace);
+  font-size: 13px;
+  color: var(--amber, #ffb020);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.efemeride-enlace:hover {
+  border-bottom-color: var(--amber, #ffb020);
+}
+
+@media (max-width: 560px) {
+  .efemeride-card {
+    padding: 22px 22px;
+  }
+}
+
+/* =========================================================
+   ARCHIVO (/efemerides/) — listado y ficha individual
+   ========================================================= */
+
+.efemerides-lista {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.efemerides-lista-item {
+  background: var(--bg-panel, #171d26);
+  border: 1px solid var(--line, #2a3441);
+  border-left: 3px solid var(--amber, #ffb020);
+  border-radius: 6px;
+  padding: 20px 24px;
+}
+
+.efemerides-lista-item .efemeride-fecha,
+.efemerides-lista-item .efemeride-categoria {
+  margin-bottom: 6px;
+}
+
+.efemerides-lista-item h3 {
+  font-size: 1.05rem;
+  margin: 8px 0 6px;
+}
+
+.efemerides-lista-item h3 a {
+  color: var(--text-primary, #e4e9f0);
+  text-decoration: none;
+}
+
+.efemerides-lista-item h3 a:hover {
+  color: var(--amber, #ffb020);
+}
+
+.efemerides-lista-item p {
+  color: var(--text-muted, #8593a6);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.efemeride-pagina {
+  border-top: none;
+  padding-top: 40px;
+}
+
+.efemeride-ficha {
+  max-width: 68ch;
+}
+
+.efemeride-ficha-volver {
+  display: inline-block;
+  margin-bottom: 24px;
+  font-family: var(--mono, ui-monospace, monospace);
+  font-size: 13px;
+  color: var(--text-dim, #5c6a7d);
+  text-decoration: none;
+}
+
+.efemeride-ficha-volver:hover {
+  color: var(--amber, #ffb020);
+}

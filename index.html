@@ -24,6 +24,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="efemerides/efemerides.css">
 
     <!-- Favicons (SVG principal, PNG de respaldo, icono para iOS) -->
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -48,7 +49,8 @@
                 <li><a href="#sobre-mi"><span class="idx">01</span> <span class="label">Sobre-mí</span></a></li>
                 <li><a href="#proyectos"><span class="idx">02</span> <span class="label">Proyectos</span></a></li>
                 <li><a href="#habilidades"><span class="idx">03</span> <span class="label">Skills</span></a></li>
-                <li><a href="#contacto"><span class="idx">04</span> <span class="label">Contacto</span></a></li>
+                <li><a href="#efemerides"><span class="idx">04</span> <span class="label">Efemérides</span></a></li>
+                <li><a href="#contacto"><span class="idx">05</span> <span class="label">Contacto</span></a></li>
             </ul>
         </div>
     </nav>
@@ -271,9 +273,29 @@
         </div>
     </section>
 
-    <section id="contacto" class="wrap">
+    <section id="efemerides" class="wrap">
         <div class="section-head">
             <span class="section-idx">04</span>
+            <h2 class="section-title">Efemérides</h2>
+        </div>
+
+        <p class="prompt"><span class="path">/sabias-que</span></p>
+
+        <article class="efemeride-card" id="efemerideCard">
+            <div class="efemeride-meta">
+                <span class="efemeride-fecha" id="efemerideFecha"></span>
+                <span class="efemeride-categoria" id="efemerideCategoria"></span>
+            </div>
+            <h3 class="efemeride-titulo" id="efemerideTitulo"></h3>
+            <p class="efemeride-texto" id="efemerideTexto"></p>
+            <p class="efemeride-fuentes" id="efemerideFuentes"></p>
+            <a href="efemerides/" class="efemeride-enlace">Ver todas las curiosidades →</a>
+        </article>
+    </section>
+
+    <section id="contacto" class="wrap">
+        <div class="section-head">
+            <span class="section-idx">05</span>
             <h2 class="section-title">Contacto</h2>
         </div>
 
@@ -297,6 +319,7 @@
         <p>© 2026 Sergi Castro Navas <span class="amber">·</span> Castroflix</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>

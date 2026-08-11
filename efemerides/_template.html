@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{TITULO}} | Castroflix</title>
+  <meta name="description" content="{{TEXTO_CORTO}}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="efemerides.css">
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="nav-brand">castroflix<span>@portfolio:~$</span></div>
+      <ul class="nav-links">
+        <li><a href="../index.html#sobre-mi"><span class="idx">01</span> <span class="label">Sobre-mí</span></a></li>
+        <li><a href="../index.html#proyectos"><span class="idx">02</span> <span class="label">Proyectos</span></a></li>
+        <li><a href="../index.html#habilidades"><span class="idx">03</span> <span class="label">Skills</span></a></li>
+        <li><a href="../index.html#efemerides"><span class="idx">04</span> <span class="label">Efemérides</span></a></li>
+        <li><a href="../index.html#contacto"><span class="idx">05</span> <span class="label">Contacto</span></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="wrap efemeride-pagina">
+    <div class="efemeride-ficha">
+      <a href="index.html" class="efemeride-ficha-volver">&larr; Todas las curiosidades</a>
+
+      <article class="efemeride-card">
+        <div class="efemeride-meta">
+          <span class="efemeride-fecha">{{FECHA}}</span>
+          <span class="efemeride-categoria">{{CATEGORIA}}</span>
+        </div>
+        <h1 class="efemeride-titulo">{{TITULO}}</h1>
+        <p class="efemeride-texto">{{TEXTO}}</p>
+        <p class="efemeride-fuentes">{{FUENTES_HTML}}</p>
+      </article>
+    </div>
+  </section>
+
+  <footer class="wrap">
+    <p>© 2026 Sergi Castro Navas <span class="amber">·</span> Castroflix</p>
+  </footer>
+
+</body>
+
+</html>
