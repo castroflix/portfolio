@@ -1,9 +1,8 @@
-Secciones de la Web:
-/quien-soy — Resumen profesional y propuesta de valor.
+Resumen profesional y propuesta de valor.
 
 — Trayectoria — Historial profesional interactivo estilizado como traceroute (desde 1996 hasta hoy).
 
-🌟 Proyectos Destacados Incluidos
+Proyectos Destacados Incluidos
 Associació 'Amics de la Informàtica Flix' (1996 - 2010): Fundador y Secretario. Despliegue de red Wi-Fi comunitaria, organización de LAN parties y talleres de divulgación técnica.
 
 Soporte Técnico y Revitalización de Hardware: Diagnóstico, optimización de sistemas y reemplazo de componentes para alargar la vida útil de equipos.
